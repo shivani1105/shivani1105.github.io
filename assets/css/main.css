@@ -1082,8 +1082,15 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider {
+  max-width: 50%; /* Set the maximum width to 50% of the page */
+  margin: 0 auto; /* Center align the slider */
+}
+
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 100%; /* Ensure the images take full width of the slider container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure images fit well within their container */
 }
 
 .portfolio-details .swiper-wrapper {
