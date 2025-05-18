@@ -1,486 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Shivani Reddy Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.jpeg" rel="icon">
-  <link href="assets/img/favicon.jpeg" rel="icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivani Reddy | Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-
-    p {
-      text-align: justify; /* Justify the text */
-      line-height: 1.6; /* Increase line height for better readability */
-      margin-bottom: 1em; /* Add space between paragraphs */
-      padding: 0 15px; /* Add padding to the left and right */
-     }
-
-    /* Specific styles for the portfolio description */
-    .portfolio-details .portfolio-description p {
-      margin-bottom: 1.5em; /* Add more space between paragraphs */
-      padding: 0 20px; /* Add more padding to the left and right */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
     }
-
+    header {
+      background: #6236ff;
+      color: white;
+    }
+    .intro-text {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .project-card {
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .section-title {
+      padding: 3rem 0 1rem;
+      text-align: center;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
   </style>
-
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Shivani Reddy</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#artwork">My Artwork</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+<body>
+  <header class="py-4">
+    <div class="container">
+      <h1 class="mb-0">Shivani Reddy</h1>
+      <p class="mb-0">Full Stack Developer | Problem Solver | System Designer</p>
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>I am Shivani</h2>
-        <p><span class="typed" data-typed-items="Analyst, Developer, Artist"></span></p>
-      </div>
-
-    </section> <!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-7 about-info">
-                <p><strong>Name: </strong> <span>Shivani Reddy</span></p>
-                <p><strong>Email: </strong> <span>shivanireddy1105@gmail.com</span></p>
-                <p><strong>Phone: </strong> <span>(682) 374-4457</span></p>
-              </div>
-
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>C#</span> <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>SQL</span> <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Python</span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Tableau</span> <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>About me</h4>
-              <p>
-                Hello! I'm Shivani Reddy, a dedicated data analyst and software developer with a Master of Science Degree in Computer Science from The University of Texas at Arlington.
-                Throughout my academic and professional career, I've developed a robust skill set in data analysis, machine learning, software engineering, and UI/UX design. 
-              </p>
-              <p>
-                Looking forward, I aspire to leverage my data analysis expertise in roles that challenge me to provide actionable insights and drive strategic decisions.
-                My ultimate goal is to contribute to projects that not only solve complex problems but also make a meaningful impact on businesses and communities.
-                Feel free to explore my portfolio to learn more about my projects and experiences. Thank you for visiting!
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science &amp; Computer Science</h4>
-              <h5>2022 - 2024</h5>
-              <p><em>University of Texas at Arlington, TX, USA</em></p>
-              <p>Coursework: Software Engineering, Machine Learning, Data Analysis, Databases, Cloud Computing & Big Data.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Technology &amp; Computer Science and Engineering</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Vardhaman College of Engineering, India</em></p>
-              <p>Designed and implemented a web application for URL shortening, employing Flask framework, SQLite Database, and Python libraries, showcasing efficiency code management.</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Research Assistant</h4>
-              <h5>Oct 2022 - Dec 2022</h5>
-              <p><em>Sustainable and Equitable Allocation of Resources (SEAR) Labs	</em></p>
-              <p><em>University of Texas at Arlington, TX, USA </em></p>
-              <ul>
-                <li>Customized the publishing reference work using Overleaf, Mendeley by putting citations of 3 research papers and 2 dissertations into organized groups. </li>
-                <li>Streamlined collaboration for a 20-member research team by optimizing GitHub workflows, improving version control efficiency and metadata tracking for research projects by ~50%.</li>
-                <li>Worked with Microsoft Word, Teams, and OneDrive to maintain organized research documentation.  </li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Programmer Analyst Trainee</h4>
-              <h5>Feb 2021 - May 2022</h5>
-              <p><em>Cognizant Technology Solutions, India</em></p>
-              <ul>
-                <li>Collaborated with cross-functional team, analyzed 30+ use cases and coding plugins using the ASP.NET framework, Increasing efficiency by 25%.</li>
-                <li>Customized Microsoft Dynamics 365 CRM data management, creating 50+ fields and forms, enhancing usability and user satisfaction.</li>
-                <li>Managed 50+ bug reports using VersionOne, cutting downtime by 30% and boosting application stability.</li>
-                <li>Conducted performance analysis and led regression testing for 2 deployment applications, boosting success by 20%.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Pre-Education Program | Junior Software Engineer</h4>
-              <h5>Jan 2020 - Jun 2020</h5>
-              <p><em>EPAM Systems, India</em></p>
-              <ul>
-                <li>Mastered and applied Clean Code practices, Exception Handling, and Logging in Java application development, enhancing code quality and maintainability for 5+ projects.</li>
-                <li>Gained in-depth knowledge and hands-on experience in Database Systems, SOLID/KISS/YAGNI design principles, REST Architecture, TDD, and JUnit, preparing for high-level engineering roles by working on 10+ diverse projects.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-
-    <!-- Projects Section -->
-    <section id="projects" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">ML</li>
-            <li data-filter=".filter-product">DBMS</li>
-            <li data-filter=".filter-branding">S/W Engg</li>
-            <li data-filter=".filter-books">Others</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/project-0.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ML</h4>
-                <p>House Sale Price Prediction</p>
-                <a href="assets/img/portfolio/project-0.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="housePricePredProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/project-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>DBMS</h4>
-                <p>Restaurant Management System</p>
-                <a href="assets/img/portfolio/project-1.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="restMgmtSysProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/project-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>DBMS and Android</h4>
-                <p>Jewelry Inventory Management System</p>
-                <a href="assets/img/portfolio/project-2.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="invMgmtSysProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/project-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>S/W Engg</h4>
-                <p>URM Application</p>
-                <a href="assets/img/portfolio/project-3.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="urmApplicationProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/project-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Others</h4>
-                <p>Sales Dashboard using Power BI</p>
-                <a href="assets/img/portfolio/project-4.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="salesDashboardProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/project-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>S/W Engg</h4>
-                <p>Software Maintenance</p>
-                <a href="assets/img/portfolio/project-5.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="softwareMaintProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                <img src="assets/img/portfolio/dea-0.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>ML</h4>
-                  <p>Diabetic Patient Early Readmission</p>
-                  <a href="assets/img/portfolio/dea-0.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="diabetesProject.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-
-    <!-- Services Section -->
-    <section id="artwork" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My Artwork</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <a href="#" class="stretched-link">
-                <img src="assets/img/artwork-0.jpg" alt="">
-              </a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <a href="#" class="stretched-link">
-                <img src="assets/img/artwork-1.jpg" alt="">
-              </a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <a href="#" class="stretched-link">
-                <img src="assets/img/artwork-2.jpg" alt="">
-              </a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <a href="#" class="stretched-link">
-                <img src="assets/img/artwork-3.jpg" alt="">
-              </a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Arlington, Texas, USA</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Phone</h3>
-                  <p>+1 682 374-4457</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email<br></h3>
-                  <p>shivanireddy1105@gmail.com</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
+  <section class="intro-text bg-light">
     <div class="container">
-      <div class="copyright text-center ">
-        <strong class="px-1 sitename">Shivani Reddy Portfolio</strong>
+      <p>
+        I'm Shivani, a software developer with hands-on experience in building full-stack systems using ASP.NET, Angular, SQL Server, and microservices architecture. I love turning problems into well-designed, maintainable solutions.
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="row g-4">
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card">
+          <img src="assets/img/portfolio/project-2.jpg" class="card-img-top" alt="Jewelry Inventory">
+          <div class="card-body">
+            <h5 class="card-title">Jewelry Inventory System</h5>
+            <p class="card-text">
+              Designed a QR-based assistant for managing stock and checkouts. Scanning reduced errors and improved speed. Led SDLC design and documentation.
+            </p>
+            <a href="invMgmtSysProject.html" class="btn btn-outline-primary">View Case Study</a>
+          </div>
+        </div>
       </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/"><i class="bi bi-linkedin"></i></a>
+
+      <!-- Add more project cards similarly -->
+
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <h2 class="section-title">Tech Stack</h2>
+    <div class="row text-center">
+      <div class="col">
+        <i class="bi bi-code-slash"></i>
+        <p>C# / ASP.NET</p>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="col">
+        <i class="bi bi-database"></i>
+        <p>SQL Server</p>
+      </div>
+      <div class="col">
+        <i class="bi bi-code"></i>
+        <p>Angular</p>
+      </div>
+      <div class="col">
+        <i class="bi bi-shield-lock"></i>
+        <p>JWT Auth</p>
       </div>
     </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com">shivanireddy1105@gmail.com</a></p>
+    <div>
+      <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/shivani1105" class="text-white"><i class="bi bi-github"></i></a>
+    </div>
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
