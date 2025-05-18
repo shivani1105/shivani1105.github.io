@@ -5,6 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Management System</title>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3/dist/js/glightbox.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lightbox = GLightbox({
+        selector: ".glightbox"
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
@@ -68,6 +78,29 @@
     .link-section a:hover {
       text-decoration: underline;
     }
+
+    .zoom-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .zoom-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .zoom-container:hover .zoom-icon {
+      background: rgba(0, 0, 0, 0.8);
+    }
   </style>
 </head>
 
@@ -76,9 +109,16 @@
   <section class="story-section">
     <div class="container">
       <h2 class="section-title">About Restaurant Management System</h2>
-      <img src="assets/img/storytelling/RDBMS/RDBMS.jpg" alt="Manual Workflow" class="story-img" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
+      <div class="zoom-container">
+        <a href="assets/img/storytelling/RDBMS/RDBMS.jpg" class="glightbox" data-gallery="image-gallery">
+          <img src="assets/img/storytelling/RDBMS/RDBMS.jpg" alt="Manual Workflow" class="story-img">
+          <i class="bi bi-zoom-in zoom-icon"></i>
+        </a>
+      </div>
       <p class="fs-5 text-center">
-        A database-driven system developed using Java and Oracle DBMS to manage restaurant operations like inventory control, employee schedules, customer orders, and feedback. The project reinforces core DBMS principles like normalization, entity mapping, and optimized SQL querying.
+        A database-driven system developed using Java and Oracle DBMS to manage restaurant operations like inventory
+        control, employee schedules, customer orders, and feedback. The project reinforces core DBMS principles like
+        normalization, entity mapping, and optimized SQL querying.
       </p>
     </div>
   </section>
@@ -89,44 +129,49 @@
       <div id="carouselWalkthroughJIMS" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/img/projects-info/project1/rms-1.jpg" class="d-block w-50 mx-auto story-img" alt="ER Diagram">
+            <img src="assets/img/projects-info/project1/rms-1.jpg" class="d-block w-50 mx-auto story-img"
+              alt="ER Diagram">
             <div class="carousel-caption d-none d-md-block">
-              <p>Entity-Relationship diagram showing relationships between customers, employees, orders, and inventory.</p>
+              <p>Entity-Relationship diagram showing relationships between customers, employees, orders, and inventory.
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/projects-info/project1/rms-2.jpg" 
-     class="d-block w-50 mx-auto story-img"
-     style="max-height: 400px; object-fit: contain;" 
-     alt="ER to Relational mapping">
+            <img src="assets/img/projects-info/project1/rms-2.jpg" class="d-block w-50 mx-auto story-img"
+              style="max-height: 400px; object-fit: contain;" alt="ER to Relational mapping">
             <div class="carousel-caption d-none d-md-block">
               <p>Converted ER model into relational tables with keys and constraints for implementation in Oracle.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/projects-info/project1/select_users.jpg" class="d-block w-50 mx-auto story-img" alt="Select Query">
+            <img src="assets/img/projects-info/project1/select_users.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Select Query">
             <div class="carousel-caption d-none d-md-block">
               <p>Query to fetch current menu items from the database using SELECT statement.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/projects-info/project1/fetch_users.jpg" class="d-block w-50 mx-auto story-img" alt="Fetch Customers">
+            <img src="assets/img/projects-info/project1/fetch_users.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Fetch Customers">
             <div class="carousel-caption d-none d-md-block">
               <p>List of customers who provided ratings, useful for analyzing feedback trends.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/projects-info/project1/groupby_users.jpg" class="d-block w-50 mx-auto story-img" alt="Group By">
+            <img src="assets/img/projects-info/project1/groupby_users.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Group By">
             <div class="carousel-caption d-none d-md-block">
               <p>Query showing customers who placed multiple orders — useful for loyalty insights.</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWalkthroughJIMS"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWalkthroughJIMS"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -146,7 +191,8 @@
         </div>
         <div class="col-md-6">
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/3BZz8R7mqu0" title="ER to Relational Mapping" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/3BZz8R7mqu0" title="ER to Relational Mapping"
+              allowfullscreen></iframe>
           </div>
           <small class="text-muted d-block mt-2">Video guide on converting ER diagrams into relational schema</small>
         </div>
