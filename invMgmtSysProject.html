@@ -1,229 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Shivani Reddy Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.jpeg" rel="icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Inventory Story</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-
-    p {
-      text-align: justify; /* Justify the text */
-      line-height: 1.6; /* Increase line height for better readability */
-      margin-bottom: 1em; /* Add space between paragraphs */
-      padding: 0 15px; /* Add padding to the left and right */
-     }
-
-    /* Specific styles for the portfolio description */
-    .portfolio-details .portfolio-description p {
-      margin-bottom: 1.5em; /* Add more space between paragraphs */
-      padding: 0 20px; /* Add more padding to the left and right */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fdfdfd;
+      color: #333;
     }
-
-    </style>
-
+    .story-section {
+      padding: 4rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .story-img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+    }
+    .tech-icons i {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: #4b6cb7;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #4b6cb7;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
 </head>
+<body>
 
-<body class="portfolio-details-page">
-
-  
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Shivani Reddy</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero" class="active">Home<br></a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#resume">Resume</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#artwork">My Artwork</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Jewelry Inventory Management System</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Project Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "slidesPerView": "auto",
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              },
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-            </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-                <img src="assets/img/projects-info/project2/jms-1.jpeg" alt="">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="assets/img/projects-info/project2/jms-2.jpeg" alt="">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="assets/img/projects-info/project2/jms-3.jpeg" alt="">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="assets/img/projects-info/project2/jms-4.jpeg" alt="">
-              </div>
-  
-              <div class="swiper-slide">
-                  <img src="assets/img/projects-info/project2/jms-5.jpeg" alt="">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/projects-info/project2/jms-6.jpeg" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="row justify-content-between gy-4 mt-4">
-
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="portfolio-description">
-              <h2>An Android Application for Jewelry Inventory Management System</h2>
-              <p>
-                The app we are designing and building is an Inventory Management Application. Its primary objective is to offer a highly efficient and modernized approach to handling inventory-related tasks. This application is designed to facilitate the meticulous tracking, organization, and monitoring of various aspects related to a jewelry business's inventory.
-              </p>
-
-              <p>
-                The application takes data from a real time industry vendor and populates the details for the admin and the admin. The key functionalities of this application include real time tracking of product quantities, detailed product information storage, and a comprehensive sales monitoring system. The application focuses on product information such as metal size, gold-related pricing, quantity, and other information too. By leveraging these features, businesses can effortlessly track their inventory levels, ensuring that they never run out of stock or overstock unnecessarily.
-              </p>
-
-              <p>
-                The application also uses a Gold-price Market and Silver-price Market to give real-time pricing to the products. This data-driven approach gives power to jewelry businesses to make informed decisions regarding their inventory management strategies and optimize their operations for greater efficiency and profitability.
-              </p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong> Android Application</li>
-                <li><strong>Sub-Category</strong> DBMS</li>
-                <li><strong>Sub-Category</strong> Software Engineering Principles</li>
-                <li><strong>Project Details</strong> <a href="https://docs.google.com/presentation/d/11Eqsu9eBu0yu7bRgwjkWp_ORA6NxHUR4/edit?usp=sharing&ouid=102868183271209806595&rtpof=true&sd=true">Jewelry Management System</a></li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer">
-
+  <section class="story-section">
     <div class="container">
-      <div class="copyright text-center ">
-        <strong class="px-1 sitename">Shivani Reddy Portfolio</strong>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <h2 class="section-title">The Problem: Manual Inventory Mayhem</h2>
+      <img src="assets/img/story/jms-manual.jpg" alt="Manual Workflow" class="story-img">
+      <p>
+        Jewelry store staff were struggling with paper records and Excel sheets. Finding product info, tracking stock, and updating prices were time-consuming and prone to human error.
+      </p>
+    </div>
+  </section>
+
+  <section class="story-section bg-light">
+    <div class="container">
+      <h2 class="section-title">The Solution: A QR-Enabled Inventory Assistant</h2>
+      <img src="assets/img/story/jms-flow.jpg" alt="QR Scan Flow" class="story-img">
+      <p>
+        I designed a QR-based inventory system that lets admins add items, generate QR codes, attach them to products, and scan them via mobile for real-time checkout and details.
+      </p>
+      <p>
+        The system also integrates daily gold/silver price feeds and allows advanced search and filtering — all from a clean admin dashboard.
+      </p>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="container">
+      <h2 class="section-title">Visual Journey Through the System</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/img/story/jms-ui-1.jpg" alt="Add Product" class="story-img">
+          <p>Add product and auto-generate QR code</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/story/jms-ui-2.jpg" alt="Scan and Checkout" class="story-img">
+          <p>Scan and retrieve product instantly for checkout</p>
+        </div>
       </div>
     </div>
+  </section>
 
+  <section class="story-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Tech Stack Used</h2>
+      <div class="tech-icons">
+        <i class="bi bi-android2"></i> Android Studio
+        <i class="bi bi-database"></i> SQLite
+        <i class="bi bi-code"></i> Java
+        <i class="bi bi-diagram-3"></i> UML / Use Case Diagrams
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center p-4 bg-dark text-light">
+    <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com" class="text-white">Contact Me</a></p>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
