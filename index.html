@@ -9,44 +9,74 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f9f9f9;
+      background: #f4f7fa;
+      color: #333;
     }
     header {
-      background: #6236ff;
+      background: linear-gradient(90deg, #4b6cb7, #182848);
       color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
     }
     .intro-text {
       padding: 4rem 2rem;
       text-align: center;
+      background: #ffffff;
+      border-bottom: 1px solid #dee2e6;
     }
     .project-card {
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
     }
     .section-title {
       padding: 3rem 0 1rem;
       text-align: center;
+      font-size: 2rem;
+      color: #4b6cb7;
+    }
+    .tech-icon {
+      font-size: 2rem;
+      color: #4b6cb7;
+      margin-bottom: 0.5rem;
     }
     footer {
-      background: #222;
+      background: #182848;
       color: white;
       text-align: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
-  <header class="py-4">
+  <header>
     <div class="container">
-      <h1 class="mb-0">Shivani Reddy</h1>
-      <p class="mb-0">Full Stack Developer | Problem Solver | System Designer</p>
+      <h1>Shivani Reddy</h1>
+      <p>Full Stack Developer | Problem Solver | System Designer</p>
     </div>
   </header>
 
-  <section class="intro-text bg-light">
+  <section class="intro-text">
     <div class="container">
-      <p>
-        I'm Shivani, a software developer with hands-on experience in building full-stack systems using ASP.NET, Angular, SQL Server, and microservices architecture. I love turning problems into well-designed, maintainable solutions.
+      <p class="lead">
+        I'm Shivani, a software developer passionate about creating scalable, secure, and user-centered applications. I love blending system design with hands-on development to deliver real-world impact.
       </p>
     </div>
   </section>
@@ -54,7 +84,6 @@
   <section class="container">
     <h2 class="section-title">Featured Projects</h2>
     <div class="row g-4">
-      <!-- Project Card -->
       <div class="col-md-6 col-lg-4">
         <div class="card project-card">
           <img src="assets/img/portfolio/project-2.jpg" class="card-img-top" alt="Jewelry Inventory">
@@ -67,9 +96,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Add more project cards similarly -->
-
     </div>
   </section>
 
@@ -77,19 +103,19 @@
     <h2 class="section-title">Tech Stack</h2>
     <div class="row text-center">
       <div class="col">
-        <i class="bi bi-code-slash"></i>
+        <div class="tech-icon"><i class="bi bi-code-slash"></i></div>
         <p>C# / ASP.NET</p>
       </div>
       <div class="col">
-        <i class="bi bi-database"></i>
+        <div class="tech-icon"><i class="bi bi-database"></i></div>
         <p>SQL Server</p>
       </div>
       <div class="col">
-        <i class="bi bi-code"></i>
+        <div class="tech-icon"><i class="bi bi-code"></i></div>
         <p>Angular</p>
       </div>
       <div class="col">
-        <i class="bi bi-shield-lock"></i>
+        <div class="tech-icon"><i class="bi bi-shield-lock"></i></div>
         <p>JWT Auth</p>
       </div>
     </div>
@@ -97,10 +123,11 @@
 
   <footer>
     <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com">shivanireddy1105@gmail.com</a></p>
-    <div>
-      <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/shivani1105" class="text-white"><i class="bi bi-github"></i></a>
+    <div class="mt-2">
+      <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/" class="me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/shivani1105"><i class="bi bi-github"></i></a>
     </div>
   </footer>
+
 </body>
 </html>
