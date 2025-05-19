@@ -7,10 +7,14 @@
   <title>Shivani Reddy | Developer Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f7fa;
+      background: #fdfdfd;
       color: #333;
     }
 
@@ -102,172 +106,181 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html#hero" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#resume">Resume</a></li>
           <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#artwork">My Artwork</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <p>Full Stack Developer | Problem Solver | System Designer</p>
     </div>
   </header>
 
+  <main class="main">
+    <section id="hero" class="intro-text">
+      <div class="container">
+        <p class="lead">
+          I'm Shivani, a software developer passionate about creating scalable, secure, and user-centered applications.
+          I love blending system design with hands-on development to deliver real-world impact.
+        </p>
+      </div>
+    </section>
 
-  <section class="intro-text">
-    <div class="container">
-      <p class="lead">
-        I'm Shivani, a software developer passionate about creating scalable, secure, and user-centered applications.
-        I
-        love blending system design with hands-on development to deliver real-world impact.
-      </p>
-    </div>
-  </section>
+    <section id="resume" class="container py-5 text-center">
+  <h2 class="section-title">Resume</h2>
+  <p class="fs-5">Download or view my latest resume and professional documents.</p>
+  <a href="https://github.com/shivani1105/Resume/blob/main/ShivaniReddy_Resume.pdf" target="_blank" class="btn btn-primary me-3">
+    <i class="bi bi-download"></i> Download Resume
+  </a>
+  <a href="https://github.com/shivani1105" target="_blank" class="btn btn-outline-secondary">
+    <i class="bi bi-github"></i> View on GitHub
+  </a>
+</section>
 
 
-  <section class="container">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/hms_cover_pic.jpg" class="card-img-top" alt="HMS">
-          <div class="card-body">
-            <h5 class="card-title">Hospital Management System</h5>
-            <p class="card-text">
-              Developed a microservices-based system with Angular, ASP.NET Core, and JWT for secure appointment
-              booking and patient data access.
-            </p>
-            <a href="hmsProject.html" class="btn btn-outline-primary">View Case Study</a>
+    <section id="projects" class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/hms_cover_pic.jpg" class="card-img-top" alt="HMS">
+            <div class="card-body">
+              <h5 class="card-title">Hospital Management System</h5>
+              <p class="card-text">
+                Developed a microservices-based system with Angular, ASP.NET Core, and JWT for secure appointment
+                booking and patient data access.
+              </p>
+              <a href="hmsProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/project-2.jpg" class="card-img-top" alt="Jewelry Inventory">
-          <div class="card-body">
-            <h5 class="card-title">Jewelry Inventory System</h5>
-            <p class="card-text">
-              Designed a QR-based assistant for managing stock and checkouts. Scanning reduced errors and improved
-              speed. Led SDLC design and documentation.
-            </p>
-            <a href="invMgmtSysProject.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/project-2.jpg" class="card-img-top" alt="Jewelry Inventory">
+            <div class="card-body">
+              <h5 class="card-title">Jewelry Inventory System</h5>
+              <p class="card-text">
+                Designed a QR-based assistant for managing stock and checkouts. Scanning reduced errors and improved
+                speed. Led SDLC design and documentation.
+              </p>
+              <a href="invMgmtSysProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/project-1.jpg" class="card-img-top" alt="Restaurant Management System">
-          <div class="card-body">
-            <h5 class="card-title">Restaurant Management System</h5>
-            <p class="card-text">
-              Designed an SQL-backed system to manage orders, menus, and customer data using ER diagrams and JDBC
-              operations.
-            </p>
-            <a href="rdbmsProject.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/project-1.jpg" class="card-img-top" alt="Restaurant Management System">
+            <div class="card-body">
+              <h5 class="card-title">Restaurant Management System</h5>
+              <p class="card-text">
+                Designed an SQL-backed system to manage orders, menus, and customer data using ER diagrams and JDBC
+                operations.
+              </p>
+              <a href="rdbmsProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/uta_cover_pic.jpg" class="card-img-top" alt="UTA Experience">
-          <div class="card-body">
-            <h5 class="card-title">UTA - Github Workflows</h5>
-            <p class="card-text">
-              Streamlined academic collaboration using GitHub branching, Overleaf, and Mendeley to resolve version
-              conflicts and publish research.
-            </p>
-            <a href="utaExp.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/uta_cover_pic.jpg" class="card-img-top" alt="UTA Experience">
+            <div class="card-body">
+              <h5 class="card-title">UTA - Github Workflows</h5>
+              <p class="card-text">
+                Streamlined academic collaboration using GitHub branching, Overleaf, and Mendeley to resolve version
+                conflicts and publish research.
+              </p>
+              <a href="utaExp.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/cognizant_cover_pic.jpg" class="card-img-top" alt="Cognizant">
-          <div class="card-body">
-            <h5 class="card-title">Cognizant - Backend Development</h5>
-            <p class="card-text">
-              Built and debugged RESTful APIs using ASP.NET Core, Swagger, and Postman as part of a roadmap
-              application for World Bank Group.
-            </p>
-            <a href="cognizant.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/cognizant_cover_pic.jpg" class="card-img-top" alt="Cognizant">
+            <div class="card-body">
+              <h5 class="card-title">Cognizant - Backend Development</h5>
+              <p class="card-text">
+                Built and debugged RESTful APIs using ASP.NET Core, Swagger, and Postman as part of a roadmap
+                application for World Bank Group.
+              </p>
+              <a href="cognizant.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/project-3.jpg" class="card-img-top" alt="URM Academic Application">
-          <div class="card-body">
-            <h5 class="card-title">URM Academic application</h5>
-            <p class="card-text">
-              Created a full-stack React app with role-based dashboards connecting URM candidates with academia and
-              DEI officers.
-            </p>
-            <a href="urmAppProject.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/project-3.jpg" class="card-img-top" alt="URM Academic Application">
+            <div class="card-body">
+              <h5 class="card-title">URM Academic application</h5>
+              <p class="card-text">
+                Created a full-stack React app with role-based dashboards connecting URM candidates with academia and
+                DEI officers.
+              </p>
+              <a href="urmAppProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/dea-0.jpg" class="card-img-top" alt="Diabetes Project">
-          <div class="card-body">
-            <h5 class="card-title">Diabetics Early Readmission</h5>
-            <p class="card-text">
-              Built predictive ML models to identify diabetic patients at risk of readmission within 30 days of
-              discharge.
-            </p>
-            <a href="diabetesProject.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/dea-0.jpg" class="card-img-top" alt="Diabetes Project">
+            <div class="card-body">
+              <h5 class="card-title">Diabetics Early Readmission</h5>
+              <p class="card-text">
+                Built predictive ML models to identify diabetic patients at risk of readmission within 30 days of
+                discharge.
+              </p>
+              <a href="diabetesProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card h-100">
-          <img src="assets/img/portfolio/project-4.jpg" class="card-img-top" alt="Jewelry Inventory">
-          <div class="card-body">
-            <h5 class="card-title">Jewelry Inventory System</h5>
-            <p class="card-text">
-              Designed an interactive Power BI dashboard to track sales trends and customer insights in real time.
-            </p>
-            <a href="salesDashboardProject.html" class="btn btn-outline-primary">View Case Study</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card h-100">
+            <img src="assets/img/portfolio/project-4.jpg" class="card-img-top" alt="Jewelry Inventory">
+            <div class="card-body">
+              <h5 class="card-title">Jewelry Inventory System</h5>
+              <p class="card-text">
+                Designed an interactive Power BI dashboard to track sales trends and customer insights in real time.
+              </p>
+              <a href="salesDashboardProject.html" class="btn btn-outline-primary">View Case Study</a>
+            </div>
           </div>
         </div>
-      </div>
 
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="container mt-5">
-    <h2 class="section-title">Tech Stack</h2>
-    <div class="row text-center">
-      <div class="col">
-        <div class="tech-icon"><i class="bi bi-code-slash"></i></div>
-        <p>C# / ASP.NET</p>
+    <section class="container mt-5">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="tech-icon"><i class="bi bi-code-slash"></i></div>
+          <p>C# / ASP.NET</p>
+        </div>
+        <div class="col">
+          <div class="tech-icon"><i class="bi bi-database"></i></div>
+          <p>SQL Server</p>
+        </div>
+        <div class="col">
+          <div class="tech-icon"><i class="bi bi-code"></i></div>
+          <p>Angular</p>
+        </div>
+        <div class="col">
+          <div class="tech-icon"><i class="bi bi-shield-lock"></i></div>
+          <p>JWT Auth</p>
+        </div>
       </div>
-      <div class="col">
-        <div class="tech-icon"><i class="bi bi-database"></i></div>
-        <p>SQL Server</p>
-      </div>
-      <div class="col">
-        <div class="tech-icon"><i class="bi bi-code"></i></div>
-        <p>Angular</p>
-      </div>
-      <div class="col">
-        <div class="tech-icon"><i class="bi bi-shield-lock"></i></div>
-        <p>JWT Auth</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
+
+  </main>
+
+  <footer class="text-center p-4 bg-dark text-light">
     <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com">shivanireddy1105@gmail.com</a></p>
     <div class="mt-2">
       <a href="https://www.linkedin.com/in/shivani-softwaredeveloper/" class="me-3"><i class="bi bi-linkedin"></i></a>
@@ -275,6 +288,7 @@
     </div>
   </footer>
 
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
