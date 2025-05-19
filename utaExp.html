@@ -29,10 +29,19 @@
             margin: 0 auto 1.5rem;
         }
 
-        .tech-icons i {
-            font-size: 2rem;
-            margin-right: 1rem;
+
+        .tech-icons a {
+            display: inline-block;
+            margin: 0.5rem 1rem;
+            text-decoration: none;
             color: #4b6cb7;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .tech-icons a:hover {
+            color: #1e40af;
+            text-decoration: underline;
         }
 
         .section-title {
@@ -179,17 +188,25 @@
     </section>
 
 
-    <section class="story-section bg-light">
-        <div class="container">
-            <h2 class="section-title">Tools & Technologies Used</h2>
-            <div class="tech-icons text-center">
+<section class="story-section bg-light">
+    <div class="container">
+        <h2 class="section-title">Tools & Technologies Used</h2>
+        <div class="tech-icons text-center">
+            <a href="https://docs.github.com/en" target="_blank">
                 <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://www.overleaf.com/learn" target="_blank">
                 <i class="bi bi-file-earmark-text"></i> Overleaf
+            </a>
+            <a href="https://www.mendeley.com/guides" target="_blank">
                 <i class="bi bi-journal-text"></i> Mendeley
+            </a>
+            <a href="https://learn.microsoft.com/en-us/microsoftteams/" target="_blank">
                 <i class="bi bi-person-lines-fill"></i> Microsoft Teams
-            </div>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <footer class="text-center p-4 bg-dark text-light">

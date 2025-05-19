@@ -29,10 +29,19 @@
       margin: 0 auto 1.5rem;
     }
 
-    .tech-icons i {
-      font-size: 2rem;
-      margin-right: 1rem;
+
+    .tech-icons a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
       color: #4b6cb7;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .tech-icons a:hover {
+      color: #1e40af;
+      text-decoration: underline;
     }
 
     .section-title {
@@ -86,169 +95,189 @@
     </div>
   </section>
 
-<section class="story-section bg-light">
-  <div class="container">
-    <h2 class="section-title">The Solution: A QR-Enabled Inventory Assistant</h2>
-
-    <div id="carouselSolutionJIMS" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/storytelling/JIMS/JIMS my_contribution.jpg" alt="my_contri" class="story-img">
-          <div class="carousel-caption d-none d-md-block">
-            <p>My Contribution</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jms_usecase.jpeg" alt="usecase" class="story-img">
-          <div class="carousel-caption d-none d-md-block">
-            <p>A Use Case Diagram visually represents system interactions, showing how users engage with key functionalities for product management.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jms_rtum.jpeg" alt="rtum" class="story-img">
-          <div class="carousel-caption d-none d-md-block">
-            <p>This Matrix maps system requirements to corresponding use cases, ensuring alignment between functional needs and implemented scenarios.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jms_seq.jpeg" alt="seq" class="story-img">
-          <div class="carousel-caption d-none d-md-block">
-            <p>A Sequence Diagram illustrates the flow of interactions between system components over time, detailing the sequence of messages exchanged to achieve a process.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jms_domain.jpeg" alt="domain" class="story-img">
-          <div class="carousel-caption d-none d-md-block">
-            <p>A Domain Diagram visually represents the key entities, relationships, and structure within a specific problem domain, helping to define system boundaries and interactions.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <p class="fs-5 mt-4">
-      My team and I initiated the idea for a mobile-friendly system where admins can create product entries, but I spearheaded the integration of QR codes for seamless tracking. I also took charge of documentation, team communication, weekly updates, use cases, sequence diagrams, domain analysis, and overall project coordination.
-    </p>
-    <p class="fs-5">
-      The application pulls live data from an industry vendor, stores it in the database, and provides real-time tracking, detailed product storage, and comprehensive sales reporting. Additional features like QR generation and search tools enhance speed, accuracy, and user confidence.
-    </p>
-  </div>
-</section>
-
-
- <section class="story-section">
-  <div class="container">
-    <h2 class="section-title">System Walkthrough (Slideshow)</h2>
-    <div id="carouselWalkthroughJIMS" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/img/projects-info/JIMS/jims_add_product.jpg" class="d-block w-50 mx-auto story-img" alt="Add Product">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Admin fills in product details and clicks “Add Product.”</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jims_checkout_product.jpg" class="d-block w-50 mx-auto story-img" alt="Checkout">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Admin views product list and checks out by selecting quantity.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jims_save_qr.jpg" class="d-block w-50 mx-auto story-img" alt="Save QR">
-          <div class="carousel-caption d-none d-md-block">
-            <p>System generates a unique QR code with encoded details.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jims_scan_qr.jpg" class="d-block w-50 mx-auto story-img" alt="Scan QR">
-          <div class="carousel-caption d-none d-md-block">
-            <p>Admin scans the QR using mobile to fetch product data instantly.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jims_search_filter.jpg" class="d-block w-50 mx-auto story-img" alt="Search Filter">
-          <div class="carousel-caption d-none d-md-block">
-            <p>The app filters and retrieves matching products from the database.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/img/projects-info/JIMS/jims_sales_report.jpg" class="d-block w-50 mx-auto story-img" alt="Sales Report">
-          <div class="carousel-caption d-none d-md-block">
-            <p>System validates data and generates detailed sales reports.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<section class="link-section">
-  <div class="container">
-    <h2 class="section-title">Explore the Code & Docs</h2>
-    <div class="row align-items-center">
-      
-      <!-- Video Column -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div class="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/P7_rFjazdtw"
-            title="Project Demo"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-
-      <!-- Links Column -->
-      <div class="col-md-6 text-start">
-        <p class="fs-5">
-          <a href="https://github.com/shivani1105/DiamondVault" target="_blank">
-            <i class="bi bi-github"></i> View GitHub Repository
-          </a>
-        </p>
-        <p class="fs-5">
-          <a href="https://docs.google.com/presentation/d/1NY3L8VdRLfAlLY_cBIJhTYfWCeC2OCfbUPIl65wym9k/edit?usp=sharing"
-            target="_blank">
-            <i class="bi bi-file-earmark-text"></i> Project Presentation
-          </a>
-        </p>
-        <p class="fs-5">
-          <a href="https://www.youtube.com/watch?v=P7_rFjazdtw" target="_blank">
-            <i class="bi bi-play-btn-fill"></i> Watch on YouTube
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
   <section class="story-section bg-light">
     <div class="container">
-      <h2 class="section-title">Tech Stack Used</h2>
-      <div class="tech-icons text-center">
-        <i class="bi bi-android2"></i> Android Studio
-        <i class="bi bi-database"></i> SQLite
-        <i class="bi bi-code"></i> Java
-        <i class="bi bi-diagram-3"></i> UML / Use Case Diagrams
+      <h2 class="section-title">The Solution: A QR-Enabled Inventory Assistant</h2>
+
+      <div id="carouselSolutionJIMS" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/storytelling/JIMS/JIMS my_contribution.jpg" alt="my_contri" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>My Contribution</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jms_usecase.jpeg" alt="usecase" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>A Use Case Diagram visually represents system interactions, showing how users engage with key
+                functionalities for product management.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jms_rtum.jpeg" alt="rtum" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>This Matrix maps system requirements to corresponding use cases, ensuring alignment between functional
+                needs and implemented scenarios.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jms_seq.jpeg" alt="seq" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>A Sequence Diagram illustrates the flow of interactions between system components over time, detailing
+                the sequence of messages exchanged to achieve a process.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jms_domain.jpeg" alt="domain" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>A Domain Diagram visually represents the key entities, relationships, and structure within a specific
+                problem domain, helping to define system boundaries and interactions.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="fs-5 mt-4">
+        My team and I initiated the idea for a mobile-friendly system where admins can create product entries, but I
+        spearheaded the integration of QR codes for seamless tracking. I also took charge of documentation, team
+        communication, weekly updates, use cases, sequence diagrams, domain analysis, and overall project coordination.
+      </p>
+      <p class="fs-5">
+        The application pulls live data from an industry vendor, stores it in the database, and provides real-time
+        tracking, detailed product storage, and comprehensive sales reporting. Additional features like QR generation
+        and search tools enhance speed, accuracy, and user confidence.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="story-section">
+    <div class="container">
+      <h2 class="section-title">System Walkthrough (Slideshow)</h2>
+      <div id="carouselWalkthroughJIMS" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/projects-info/JIMS/jims_add_product.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Add Product">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Admin fills in product details and clicks “Add Product.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jims_checkout_product.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Checkout">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Admin views product list and checks out by selecting quantity.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jims_save_qr.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Save QR">
+            <div class="carousel-caption d-none d-md-block">
+              <p>System generates a unique QR code with encoded details.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jims_scan_qr.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Scan QR">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Admin scans the QR using mobile to fetch product data instantly.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jims_search_filter.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Search Filter">
+            <div class="carousel-caption d-none d-md-block">
+              <p>The app filters and retrieves matching products from the database.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/JIMS/jims_sales_report.jpg" class="d-block w-50 mx-auto story-img"
+              alt="Sales Report">
+            <div class="carousel-caption d-none d-md-block">
+              <p>System validates data and generates detailed sales reports.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWalkthroughJIMS"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWalkthroughJIMS"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
+
+
+  <section class="link-section">
+    <div class="container">
+      <h2 class="section-title">Explore the Code & Docs</h2>
+      <div class="row align-items-center">
+
+        <!-- Video Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/P7_rFjazdtw" title="Project Demo" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Links Column -->
+        <div class="col-md-6 text-start">
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/DiamondVault" target="_blank">
+              <i class="bi bi-github"></i> View GitHub Repository
+            </a>
+          </p>
+          <p class="fs-5">
+            <a href="https://docs.google.com/presentation/d/1NY3L8VdRLfAlLY_cBIJhTYfWCeC2OCfbUPIl65wym9k/edit?usp=sharing"
+              target="_blank">
+              <i class="bi bi-file-earmark-text"></i> Project Presentation
+            </a>
+          </p>
+          <p class="fs-5">
+            <a href="https://www.youtube.com/watch?v=P7_rFjazdtw" target="_blank">
+              <i class="bi bi-play-btn-fill"></i> Watch on YouTube
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="story-section bg-light">
+  <div class="container">
+    <h2 class="section-title">Tech Stack Used</h2>
+    <div class="tech-icons text-center">
+      <a href="https://developer.android.com/develop" target="_blank">
+        <i class="bi bi-android2"></i> Android Studio
+      </a>
+      <a href="https://sqlite.org/docs.html" target="_blank">
+        <i class="bi bi-database"></i> SQLite
+      </a>
+      <a href="https://docs.oracle.com/en/java/" target="_blank">
+        <i class="bi bi-code"></i> Java
+      </a>
+      <a href="https://www.uml-diagrams.org/use-case-diagrams.html" target="_blank">
+        <i class="bi bi-diagram-3"></i> UML / Use Case Diagrams
+      </a>
+    </div>
+  </div>
+</section>
 
   <footer class="text-center p-4 bg-dark text-light">
     <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com" class="text-white">Contact Me</a></p>

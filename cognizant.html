@@ -36,6 +36,20 @@
       text-align: center;
     }
 
+    .tech-icons a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      text-decoration: none;
+      color: #4b6cb7;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .tech-icons a:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
     .link-section {
       background: #eef1f5;
       padding: 3rem 2rem;
@@ -52,11 +66,6 @@
       text-decoration: underline;
     }
 
-    .tech-icons i {
-      font-size: 2rem;
-      margin-right: 1rem;
-      color: #4b6cb7;
-    }
   </style>
 </head>
 
@@ -65,7 +74,7 @@
   <section class="story-section">
     <div class="container">
       <h2 class="section-title">Cognizant: API Development & Debugging Experience</h2>
-      <img src="assets/img/storytelling/cognizant.jpg" alt="Cognizant Screenshot" class="story-img">
+      <img src="assets/img/storytelling/cognizant/cognizant.jpg" alt="Cognizant Screenshot" class="story-img">
       <p class="fs-5">
         During my time at Cognizant Technology Solutions under the World Bank Group project, I worked as a Programmer
         Analyst Trainee. My main responsibility was building and testing RESTful APIs for a roadmap application that
@@ -102,6 +111,7 @@
     </div>
   </section>
 
+
   <section class="link-section">
     <div class="container">
       <h2 class="section-title">Presentation & Reference</h2>
@@ -109,9 +119,33 @@
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="ratio ratio-16x9">
             <iframe src="https://docs.google.com/presentation/d/1CXowBGB1g1RF4r6sBxnHBXtcsVHxZwHG/embed"
-              title="Project Presentation" allowfullscreen></iframe>
+              title="Project Presentation" allowfullscreen>
+            </iframe>
           </div>
           <small class="text-muted d-block mt-2">Retail Product Management System</small>
+        </div>
+
+        <div class="col-md-6 text-start">
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/E-CommercePortal" target="_blank">
+              <i class="bi bi-github"></i> E-Commerce portal GitHub Repo
+            </a>
+          </p>
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/ProductMicroservice" target="_blank">
+              <i class="bi bi-github"></i> Product Service GitHub Repo
+            </a>
+          </p>
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/VendorMicroservice" target="_blank">
+              <i class="bi bi-github"></i> Vendor Service GitHub Repo
+            </a>
+          </p>
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/AuthorizationMicroservice" target="_blank">
+              <i class="bi bi-github"></i> Authorization Service GitHub Repo
+            </a>
+          </p>
         </div>
       </div>
     </div>
@@ -122,12 +156,24 @@
     <div class="container">
       <h2 class="section-title">Tech Stack Used</h2>
       <div class="tech-icons text-center">
-        <i class="bi bi-code-slash"></i> C# / ASP.NET Core
-        <i class="bi bi-server"></i> SQL Server
-        <i class="bi bi-box-arrow-in-right"></i> REST API
-        <i class="bi bi-diagram-3"></i> Swagger
-        <i class="bi bi-envelope-open"></i> Postman
-        <i class="bi bi-terminal"></i> Visual Studio Debugger
+        <a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-9.0" target="_blank">
+          <i class="bi bi-code-slash"></i> C# / ASP.NET Core
+        </a>
+        <a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16" target="_blank">
+          <i class="bi bi-server"></i> SQL Server
+        </a>
+        <a href="https://docs.github.com/en/rest" target="_blank">
+          <i class="bi bi-box-arrow-in-right"></i> REST API
+        </a>
+        <a href="https://swagger.io/docs/" target="_blank">
+          <i class="bi bi-diagram-3"></i> Swagger
+        </a>
+        <a href="https://learning.postman.com/docs/introduction/overview/" target="_blank">
+          <i class="bi bi-envelope-open"></i> Postman
+        </a>
+        <a href="https://learn.microsoft.com/en-us/visualstudio/debugger/?view=vs-2022" target="_blank">
+          <i class="bi bi-terminal"></i> Visual Studio Debugger
+        </a>
       </div>
     </div>
   </section>
