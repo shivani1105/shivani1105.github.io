@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jewelry Inventory Story</title>
+  <title>URM Academic Application</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
@@ -12,66 +13,178 @@
       background: #fdfdfd;
       color: #333;
     }
+
     .story-section {
       padding: 4rem 2rem;
       background: #fff;
       border-bottom: 1px solid #ddd;
     }
+
     .story-img {
       max-width: 100%;
+      max-height: 400px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1.5rem;
     }
+
     .tech-icons i {
       font-size: 2rem;
       margin-right: 1rem;
       color: #4b6cb7;
     }
+
     .section-title {
       font-size: 2rem;
       color: #4b6cb7;
       margin-bottom: 2rem;
       text-align: center;
     }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(20%) sepia(50%) saturate(500%) hue-rotate(180deg);
+    }
+
+    .link-section {
+      background: #eef1f5;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .link-section a {
+      font-weight: 500;
+      color: #4b6cb7;
+      text-decoration: none;
+    }
+
+    .link-section a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
 
   <section class="story-section">
     <div class="container">
-      <h2 class="section-title">The Problem: Manual Inventory Mayhem</h2>
-      <img src="assets/img/story/jms-manual.jpg" alt="Manual Workflow" class="story-img">
-      <p>
-        Jewelry store staff were struggling with paper records and Excel sheets. Finding product info, tracking stock, and updating prices were time-consuming and prone to human error.
+      <h2 class="section-title">The Problem: Bridging Opportunity Gaps</h2>
+      <img src="assets/img/storytelling/urm/need_for_urm.png" alt="Manual Workflow" class="story-img">
+      <p class="fs-5 text-center">
+        URM (Underrepresented Minority) is a platform that helps candidates connect with academia, recruiters, and DEI officers for PhD, postdoctoral, and faculty positions. There was a need for a centralized digital solution where users could register, log in, and create profiles for discovery and recruitment.
       </p>
     </div>
   </section>
 
   <section class="story-section bg-light">
     <div class="container">
-      <h2 class="section-title">The Solution: A QR-Enabled Inventory Assistant</h2>
-      <img src="assets/img/story/jms-flow.jpg" alt="QR Scan Flow" class="story-img">
-      <p>
-        I designed a QR-based inventory system that lets admins add items, generate QR codes, attach them to products, and scan them via mobile for real-time checkout and details.
+      <h2 class="section-title">The Solution: URM Academic Application</h2>
+
+      <div id="carouselSolutionJIMS" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/projects-info/project3/my_contribution.png" alt="my_contri" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>My contribution: Created role-based dashboards, streamlined profile forms, and supported API integration.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/project3/system flow.jpg" alt="system_flow" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Visual representation of how the control flows through the system</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/storytelling/urm/DEI dashboard.jpg" alt="dei dashboard" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>The DEI dashboard dynamically displays insights about candidate distribution, job listings, and roles filled.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/storytelling/urm/role based register.jpg" alt="role based register" class="story-img">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Users are redirected to different dashboards after registering with roles: Candidate, Recruiter, DEI Officer, or Academia.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSolutionJIMS" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <p class="fs-5 mt-4">
+        The application was designed with accessibility and role-specific interaction in mind. Each role (Candidate, Recruiter, Academia, DEI Officer) experiences a tailored dashboard post-login.
       </p>
-      <p>
-        The system also integrates daily gold/silver price feeds and allows advanced search and filtering — all from a clean admin dashboard.
+      <p class="fs-5">
+        The DEI dashboard aggregates key statistics to assist officers in identifying gaps and optimizing hiring strategies. API integration enables dynamic data management and user routing between components.
       </p>
     </div>
   </section>
 
   <section class="story-section">
     <div class="container">
-      <h2 class="section-title">Visual Journey Through the System</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="assets/img/story/jms-ui-1.jpg" alt="Add Product" class="story-img">
-          <p>Add product and auto-generate QR code</p>
+      <h2 class="section-title">System Walkthrough (Slideshow)</h2>
+      <div id="carouselWalkthroughJIMS" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/projects-info/project3/homepage.png" class="d-block w-50 mx-auto story-img" alt="Homepage">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Homepage showcasing services available to different user types</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/project3/register.png" class="d-block w-50 mx-auto story-img" alt="Register">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Registration page prompting role selection and initiating profile flow</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/projects-info/project3/api_code.png" class="d-block w-50 mx-auto story-img" alt="API Code">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Frontend React application interacting with backend REST APIs</p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <img src="assets/img/story/jms-ui-2.jpg" alt="Scan and Checkout" class="story-img">
-          <p>Scan and retrieve product instantly for checkout</p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselWalkthroughJIMS" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="link-section">
+    <div class="container">
+      <h2 class="section-title">Explore the Code & Docs</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://docs.google.com/presentation/d/1adRfJdGxZjL_lZryZ5n7EaYBsGPmPtYY/embed" 
+              title="Project Presentation" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 text-start">
+          <p class="fs-5">
+            <a href="https://github.com/shivani1105/WDM_Project" target="_blank">
+              <i class="bi bi-github"></i> View GitHub Repository of DEI Dashboard
+            </a>
+          </p>
         </div>
       </div>
     </div>
@@ -80,11 +193,12 @@
   <section class="story-section bg-light">
     <div class="container">
       <h2 class="section-title">Tech Stack Used</h2>
-      <div class="tech-icons">
-        <i class="bi bi-android2"></i> Android Studio
-        <i class="bi bi-database"></i> SQLite
-        <i class="bi bi-code"></i> Java
-        <i class="bi bi-diagram-3"></i> UML / Use Case Diagrams
+      <div class="tech-icons text-center">
+        <i class="bi bi-braces"></i> React.js
+        <i class="bi bi-hdd-network"></i> RESTful APIs
+        <i class="bi bi-server"></i> Node.js Backend
+        <i class="bi bi-database"></i> PostgreSQL
+        <i class="bi bi-layers"></i> Chart.js (for DEI Dashboard Visualization)
       </div>
     </div>
   </section>
@@ -93,5 +207,7 @@
     <p>&copy; 2024 Shivani Reddy | <a href="mailto:shivanireddy1105@gmail.com" class="text-white">Contact Me</a></p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
