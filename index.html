@@ -11,12 +11,52 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".mobile-nav-toggle");
+      const navMenu = document.querySelector("#navmenu");
+
+      toggle.addEventListener("click", () => {
+        navMenu.classList.toggle("navmenu-active");
+        toggle.classList.toggle("bi-list");
+        toggle.classList.toggle("bi-x");
+      });
+    });
+  </script>
+
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background: #fdfdfd;
       color: #333;
     }
+
+    /* Mobile nav toggle */
+    .navmenu {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 991.98px) {
+      .navmenu {
+        display: none;
+        flex-direction: column;
+        background: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .navmenu.navmenu-active {
+        display: flex;
+      }
+    }
+
 
     header {
       background: linear-gradient(90deg, #4b6cb7, #182848);
@@ -154,8 +194,7 @@
             </li>
             <li>
               <i class="bi bi-file-earmark-text me-2"></i>
-              <a href="https://learn.microsoft.com/en-us/users/shivani1105/achievements"
-                target="_blank">
+              <a href="https://learn.microsoft.com/en-us/users/shivani1105/achievements" target="_blank">
                 View My Badges on Microsoft Learn
               </a>
             </li>
