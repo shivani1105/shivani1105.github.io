@@ -11,11 +11,78 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".mobile-nav-toggle");
+      const navMenu = document.querySelector("#navmenu");
+
+      toggle.addEventListener("click", () => {
+        navMenu.classList.toggle("navmenu-active");
+        toggle.classList.toggle("bi-list");
+        toggle.classList.toggle("bi-x");
+      });
+    });
+  </script>
+
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background: #fdfdfd;
       color: #333;
+    }
+
+    .navmenu {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (max-width: 991.98px) {
+      .navmenu {
+        display: none;
+        flex-direction: column;
+        background: #ffffff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .navmenu.navmenu-active {
+        display: flex;
+      }
+    }
+
+    header {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .mobile-nav-toggle {
+      font-size: 1.8rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (min-width: 992px) {
+      .mobile-nav-toggle {
+        display: none;
+      }
     }
 
     .story-section {
@@ -90,14 +157,14 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">Shivani Reddy</h1>
       </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero">Home</a></li>
+      <nav>
+        <ul id="navmenu" class="navmenu">
+          <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#resume">Resume</a></li>
           <li><a href="index.html#projects">Projects</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle navigation" role="button"></button>
     </div>
   </header>
 
@@ -164,14 +231,19 @@
           </button>
         </div>
 
-       
-        <p class="fs-5 mt-4">
-  The application was designed with accessibility and role-specific interaction in mind. I designed and implemented the role-based registration flow, where users select their role (Candidate, Recruiter, Academia, or DEI Officer) during signup and are redirected to a personalized dashboard based on that role. This ensured that each user saw relevant content and functionality immediately upon login.
-</p>
 
-<p class="fs-5">
-  I also built the DEI dashboard, which dynamically aggregates job and candidate statistics to help Diversity, Equity, and Inclusion officers identify representation gaps and refine hiring strategies. The dashboard logic integrates backend APIs to fetch real-time data and support interactive insights.
-</p>
+        <p class="fs-5 mt-4">
+          The application was designed with accessibility and role-specific interaction in mind. I designed and
+          implemented the role-based registration flow, where users select their role (Candidate, Recruiter, Academia,
+          or DEI Officer) during signup and are redirected to a personalized dashboard based on that role. This ensured
+          that each user saw relevant content and functionality immediately upon login.
+        </p>
+
+        <p class="fs-5">
+          I also built the DEI dashboard, which dynamically aggregates job and candidate statistics to help Diversity,
+          Equity, and Inclusion officers identify representation gaps and refine hiring strategies. The dashboard logic
+          integrates backend APIs to fetch real-time data and support interactive insights.
+        </p>
       </div>
     </section>
 
